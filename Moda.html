@@ -1,0 +1,603 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ZAMBA STORE</title>
+    <link rel="icon" href="Imagen/fondos/logo.ico"/>
+
+    <style>
+
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: rgb(255, 255, 255);
+            color: #333;
+        }
+
+        header {
+            background-color: #ff0000;
+            color: white;
+            padding: 1rem 2rem;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            position: sticky;
+            top: 0;
+            z-index: 1000;
+        }
+        header .logo {
+            font-size: 1.5rem;
+            font-weight: bold;
+        }
+        header nav a {
+            color: white;
+            text-decoration: none;
+            margin: 0 1rem;
+            font-weight: 500;
+        }
+        header nav a:hover {
+            text-decoration: underline;
+        }
+
+        .section-container {
+            display: flex;
+            padding: 40px;
+            text-align: left;
+            justify-content: flex-start;
+        }
+
+        .section-container h2 {
+            color: #b30000;
+            width: 25%;
+            margin-right: 40px;
+        }
+
+        .section-container p {
+            width: 75%;
+        }
+
+        .Productos h2 {
+            text-align: center;
+            color: rgb(255, 0, 0);
+        }
+
+        .manga {
+            width: 100%;
+            padding: 20px;
+            margin-top: 20px;
+            display: flex;
+            align-items: center;
+        }
+
+        .manga-img {
+            width: 150px;
+            height: 150px;
+            object-fit: cover;
+            margin-right: 20px;
+            border: 4px solid #ff0000;
+        }
+
+        .manga-info {
+            width: calc(100% - 170px); /* Ajusta el ancho de la información para dejar espacio para la imagen */
+        }
+
+        .manga-info h3 {
+            color: #b30000;
+        }
+
+        .manga-btn {
+            background-color: #b30000;
+            color: white;
+            border: none;
+            padding: 10px 20px;
+            cursor: pointer;
+            font-size: 16px;
+        }
+
+        .manga-btn:hover {
+            background-color: #ff4d4d;
+        }
+
+        .camiseta {
+            width: 100%;
+            padding: 20px;
+            margin-top: 20px;
+            display: flex;
+            align-items: center;
+        }
+
+        .camiseta-img {
+            width: 150px;
+            height: 150px;
+            object-fit: cover;
+            margin-right: 20px;
+            border: 4px solid #ff0000;
+        }
+
+        .camiseta-info {
+            width: calc(100% - 170px); /* Ajusta el ancho de la información para dejar espacio para la imagen */
+        }
+
+        .camiseta-info h3 {
+            color: #b30000;
+        }
+
+        .camiseta-btn {
+            background-color: #b30000;
+            color: white;
+            border: none;
+            padding: 10px 20px;
+            cursor: pointer;
+            font-size: 16px;
+        }
+
+        .camiseta-btn:hover {
+            background-color: #ff4d4d;
+        }
+
+        .vestido {
+            width: 100%;
+            padding: 20px;
+            margin-top: 20px;
+            display: flex;
+            align-items: center;
+        }
+
+        .vestido-img {
+            width: 150px;
+            height: 150px;
+            object-fit: cover;
+            margin-right: 20px;
+            border: 4px solid #ff0000;
+        }
+
+        .vestido-info {
+            width: calc(100% - 170px); /* Ajusta el ancho de la información para dejar espacio para la imagen */
+        }
+
+        .vestido-info h3 {
+            color: #b30000;
+        }
+
+        .vestido-btn {
+            background-color: #b30000;
+            color: white;
+            border: none;
+            padding: 10px 20px;
+            cursor: pointer;
+            font-size: 16px;
+        }
+
+        .vestido-btn:hover {
+            background-color: #ff4d4d;
+        }
+
+        .Jeans {
+            width: 100%;
+            padding: 20px;
+            margin-top: 20px;
+            display: flex;
+            align-items: center;
+        }
+
+        .Jeans-img {
+            width: 150px;
+            height: 150px;
+            object-fit: cover;
+            margin-right: 20px;
+            border: 4px solid #ff0000;
+        }
+
+        .Jeans-info {
+            width: calc(100% - 170px); /* Ajusta el ancho de la información para dejar espacio para la imagen */
+        }
+
+        .Jeans-info h3 {
+            color: #b30000;
+        }
+
+        .Jeans-btn {
+            background-color: #b30000;
+            color: white;
+            border: none;
+            padding: 10px 20px;
+            cursor: pointer;
+            font-size: 16px;
+        }
+
+        .Jeans-btn:hover {
+            background-color: #ff4d4d;
+        }
+
+        .Camiseta {
+            width: 100%;
+            padding: 20px;
+            margin-top: 20px;
+            display: flex;
+            align-items: center;
+        }
+
+        .Camiseta-img {
+            width: 150px;
+            height: 150px;
+            object-fit: cover;
+            margin-right: 20px;
+            border: 4px solid #ff0000;
+        }
+
+        .Camiseta-info {
+            width: calc(100% - 170px); /* Ajusta el ancho de la información para dejar espacio para la imagen */
+        }
+
+        .Camiseta-info h3 {
+            color: #b30000;
+        }
+
+        .Camiseta-btn {
+            background-color: #b30000;
+            color: white;
+            border: none;
+            padding: 10px 20px;
+            cursor: pointer;
+            font-size: 16px;
+        }
+
+        .Camiseta-btn:hover {
+            background-color: #ff4d4d;
+        }
+
+        .Conjunto {
+            width: 100%;
+            padding: 20px;
+            margin-top: 20px;
+            display: flex;
+            align-items: center;
+        }
+
+        .Conjunto-img {
+            width: 150px;
+            height: 150px;
+            object-fit: cover;
+            margin-right: 20px;
+            border: 4px solid #ff0000;
+        }
+
+        .Conjunto-info {
+            width: calc(100% - 170px); /* Ajusta el ancho de la información para dejar espacio para la imagen */
+        }
+
+        .Conjunto-info h3 {
+            color: #b30000;
+        }
+
+        .Conjunto-btn {
+            background-color: #b30000;
+            color: white;
+            border: none;
+            padding: 10px 20px;
+            cursor: pointer;
+            font-size: 16px;
+        }
+
+        .Conjunto-btn:hover {
+            background-color: #ff4d4d;
+        }
+
+        .Sudadera {
+            width: 100%;
+            padding: 20px;
+            margin-top: 20px;
+            display: flex;
+            align-items: center;
+        }
+
+        .Sudadera-img {
+            width: 150px;
+            height: 150px;
+            object-fit: cover;
+            margin-right: 20px;
+            border: 4px solid #ff0000;
+        }
+
+        .Sudadera-info {
+            width: calc(100% - 170px); /* Ajusta el ancho de la información para dejar espacio para la imagen */
+        }
+
+        .Sudadera-info h3 {
+            color: #b30000;
+        }
+
+        .Sudadera-btn {
+            background-color: #b30000;
+            color: white;
+            border: none;
+            padding: 10px 20px;
+            cursor: pointer;
+            font-size: 16px;
+        }
+
+        .Sudadera-btn:hover {
+            background-color: #ff4d4d;
+        }
+
+        .pijama {
+            width: 100%;
+            padding: 20px;
+            margin-top: 20px;
+            display: flex;
+            align-items: center;
+        }
+
+        .pijama-img {
+            width: 150px;
+            height: 150px;
+            object-fit: cover;
+            margin-right: 20px;
+            border: 4px solid #ff0000;
+        }
+
+        .pijama-info {
+            width: calc(100% - 170px); /* Ajusta el ancho de la información para dejar espacio para la imagen */
+        }
+
+        .pijama-info h3 {
+            color: #b30000;
+        }
+
+        .pijama-btn {
+            background-color: #b30000;
+            color: white;
+            border: none;
+            padding: 10px 20px;
+            cursor: pointer;
+            font-size: 16px;
+        }
+
+        .pijama-btn:hover {
+            background-color: #ff4d4d;
+        }
+
+        .panti {
+            width: 100%;
+            padding: 20px;
+            margin-top: 20px;
+            display: flex;
+            align-items: center;
+        }
+
+        .panti-img {
+            width: 150px;
+            height: 150px;
+            object-fit: cover;
+            margin-right: 20px;
+            border: 4px solid #ff0000;
+        }
+
+        .panti-info {
+            width: calc(100% - 170px); /* Ajusta el ancho de la información para dejar espacio para la imagen */
+        }
+
+        .panti-info h3 {
+            color: #b30000;
+        }
+
+        .panti-btn {
+            background-color: #b30000;
+            color: white;
+            border: none;
+            padding: 10px 20px;
+            cursor: pointer;
+            font-size: 16px;
+        }
+
+        .panti-btn:hover {
+            background-color: #ff4d4d;
+        }
+
+        .Sujetadores {
+            width: 100%;
+            padding: 20px;
+            margin-top: 20px;
+            display: flex;
+            align-items: center;
+        }
+
+        .Sujetadores-img {
+            width: 150px;
+            height: 150px;
+            object-fit: cover;
+            margin-right: 20px;
+            border: 4px solid #ff0000;
+        }
+
+        .Sujetadores-info {
+            width: calc(100% - 170px); /* Ajusta el ancho de la información para dejar espacio para la imagen */
+        }
+
+        .Sujetadores-info h3 {
+            color: #b30000;
+        }
+
+        .Sujetadores-btn {
+            background-color: #b30000;
+            color: white;
+            border: none;
+            padding: 10px 20px;
+            cursor: pointer;
+            font-size: 16px;
+        }
+
+        .Sujetadores-btn:hover {
+            background-color: #ff4d4d;
+        }
+
+        .center-line {
+            position: relative;
+            display: inline-block;
+            color: rgba(0, 0, 0, 0.7); /* Color negro con transparencia */
+            left: 20px;
+        }
+        .center-line::before {
+            content: "";
+            position: absolute;
+            top: 50%;
+            left: 0;
+            width: 100%;
+            height: 1px; /* Grosor de la línea */
+            background-color: black; /* Color de la línea */
+            transform: translateY(-50%);
+        }
+
+        .descuento {
+            color: #b30000;
+            border: 2px solid #ff0000;
+            display: inline;
+            }
+
+
+    </style>
+</head>
+<body>
+
+    <header>
+        <div class="logo">ZAMBA STORE</div>
+        <nav>
+            <a href="index.html">Inicio</a>
+            <a href="Login.html">Login</a>
+            <a href="Catalogo.html">Categorías</a>
+            <a href="Contactos.html">Sobre Nosotros</a>
+        </nav>
+    </header>
+
+    <div class="Productos">
+        <h2>Hogar</h2>
+    </div>
+
+    <section id="productos">
+        <div class="section-container">
+            <div class="manga">
+                <img src="Imagen/Moda/vestido_de_manga.png" alt="Imagen del manga" class="manga-img">
+                <div class="manga-info">
+                    <h3>Vestido de manga larga de cuerpo entero</h3>
+                    <p>Vestido de manga larga de cuerpo entero de impresión de gato 3D para mujeres - Cuello de tripulación, tejido de punto, mezcla de poliéster y spandex, estilo de vacaciones casual, ropa para todas las estaciones.</p>
+                    <p><strong>Precio:</strong>RD:607</p>
+                    <button class="manga-btn">Comprar</button>
+                </div>
+            </div>
+
+            <div class="camiseta">
+                <img src="Imagen/Moda/camiseta.png" alt="Imagen del producto camiseta" class="camiseta-img">
+                <div class="camiseta-info">
+                    <h3>Camiseta de manga corta</h3>
+                    <p>Camiseta de manga corta con estampado digital de moda para hombre KING - Color sólido, tejido de punto, poliéster, cuello redondo, ajuste regular..</p>
+                    <p><strong>Precio:</strong>RD:263</p>
+                    <button class="camiseta-btn">Comprar</button>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="productos">
+        <div class="section-container">
+            <div class="vestido">
+                <img src="Imagen/Moda/vestido_largo.png" alt="Imagen del vestido" class="vestido-img">
+                <div class="vestido-info">
+                    <h3>Vestido largo elegante</h3>
+                    <p>Vestido largo elegante de manga larga para mujer con estampado, poliéster, detalle de botones, cuello alto pequeño, cinturón, tejido, falda larga - Colección de moda primavera/verano/otoño.</p>
+                    <p><strong>Precio:</strong>RD:873</p>
+                    <button class="vestido-btn">Comprar</button>
+                </div>
+            </div>
+
+            <div class="Jeans">
+                <img src="Imagen/Moda/jeans_ajustados.png" alt="Imagen del producto Jeans" class="Jeans-img">
+                <div class="Jeans-info">
+                    <h3>Jeans ajustados</h3>
+                    <p>Jeans ajustados de tiro alto, de lavado azul, de un solo pecho, lisos y lavados, para mujer..</p>
+                    <p><strong>Precio:</strong>RD:1,139</p>
+                    <button class="Jeans-btn">Comprar</button>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="productos">
+        <div class="section-container">
+            <div class="Camiseta">
+                <img src="Imagen/Moda/camiseta1.png" alt="Imagen del Camiseta" class="Camiseta-img">
+                <div class="Camiseta-info">
+                    <h3>Camiseta casual</h3>
+                    <p>Camiseta casual de cuello redondo para hombre, 100% poliéster, ajuste regular, con patrón de rayas geométricas, con ligero estiramiento..</p>
+                    <p><strong>Precio:</strong>RD:296</p>
+                    <button class="Camiseta-btn">Comprar</button>
+                </div>
+            </div>
+
+            <div class="Conjunto">
+                <img src="Imagen/Moda/conjunto.png" alt="Imagen del producto Conjunto" class="Conjunto-img">
+                <div class="Conjunto-info">
+                    <h3>Conjunto de sudadera</h3>
+                    <p>Conjunto de sudadera y pantalón de chándal con estampado 3D para hombre - Camiseta de cuello redondo deportiva de poliéster con ligero estiramiento y conjunto de joggers con detalles de patrón, ajuste regular informal para primavera/otoño, ideal para usar los fines de semana.</p>
+                    <p><strong>Precio:</strong>RD:864</p>
+                    <button class="Conjunto-btn">Comprar</button>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="productos">
+        <div class="section-container">
+            <div class="Sudadera">
+                <img src="Imagen/Moda/sudadera.png" alt="Imagen del Sudadera" class="Sudadera-img">
+                <div class="Sudadera-info">
+                    <h3>Sudadera con Capucha</h3>
+                    <p>Sudadera con Capucha de Bloques de Color para Hombre - Jersey Casual con Bolsillo Canguro, Manga Larga, Mezcla de Poliéster, Lavable a Máquina.</p>
+                    <p><strong>Precio:</strong>RD:705</p>
+                    <button class="Sudadera-btn">Comprar</button>
+                </div>
+            </div>
+
+            <div class="pijama">
+                <img src="Imagen/Moda/conjunto_de_pijama.png" alt="Imagen del producto pijama" class="pijama-img">
+                <div class="pijama-info">
+                    <h3>Conjunto de pijama</h3>
+                    <p>Conjunto de pijama sexy de canalé con estampado de corazón y ribete con volantes para mujer, top corto de tirantes con cuello redondo y espalda descubierta, pantalones cortos, ajuste cómodo y relajado..</p>
+                    <p class="descuento"><strong>44% de descuento</strong></p>
+                    <p><strong>Precio:</strong>RD:468<span class="center-line">838</span></p>
+                    <button class="pijama-btn">Comprar</button>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="productos">
+        <div class="section-container">
+            <div class="panti">
+                <img src="Imagen/Moda/panti.png" alt="Imagen del panti" class="panti-img">
+                <div class="panti-info">
+                    <h3>5pcs Bragas de mujer</h3>
+                    <p>5pcs Bragas Hipster con Encaje Sexy para Mujer - Sin Costuras, Transpirables y Elásticas de Mezcla de Nailon.</p>
+                    <p class="descuento"><strong>67% de descuento</strong></p>
+                    <p><strong>Precio:</strong>RD:421<span class="center-line">1,304</span></p>
+                    <button class="panti-btn">Comprar</button>
+                </div>
+            </div>
+
+            <div class="Sujetadores">
+                <img src="Imagen/Moda/sujetadores.png" alt="Imagen del producto Sujetadores" class="Sujetadores-img">
+                <div class="Sujetadores-info">
+                    <h3>Conjunto De 7 Sujetadores</h3>
+                    <p>Conjunto De 7 Sujetadores Deportivos Sólidos Sin Costuras, Cómodos Y Transpirables, Lencería Y Ropa Interior Para Mujeres.</p>
+                    <p class="descuento"><strong>63% de descuento</strong></p>
+                    <p><strong>Precio:</strong>RD:745<span class="center-line">2,040</span></p>
+                    <button class="Sujetadores-btn">Comprar</button>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    
+</body>
+</html>
