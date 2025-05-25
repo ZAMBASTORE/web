@@ -1,0 +1,441 @@
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: rgb(255, 255, 255);
+            color: #333;
+        }
+
+        header {
+            background-color: #ff0000;
+            color: white;
+            padding: 1rem 2rem;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            position: sticky;
+            top: 0;
+            z-index: 1000;
+        }
+        header .logo {
+            font-size: 1.5rem;
+            font-weight: bold;
+        }
+        header nav a {
+            color: white;
+            text-decoration: none;
+            margin: 0 1rem;
+            font-weight: 600;
+        }
+        header nav a:hover {
+            text-decoration: underline;
+        }
+
+        .section-container {
+            display: flex;
+            padding: 40px;
+            text-align: left;
+            justify-content: flex-start;
+        }
+
+        .section-container h2 {
+            color: #b30000;
+            width: 25%;
+            margin-right: 40px;
+        }
+
+        .section-container p {
+            width: 75%;
+        }
+
+        .Productos h2 {
+            text-align: center;
+            color: rgb(255, 0, 0);
+        }
+
+        .reloj {
+            width: 100%;
+            padding: 20px;
+            margin-top: 20px;
+            display: flex;
+            align-items: center;
+        }
+
+        .reloj-img {
+            width: 150px;
+            height: 150px;
+            object-fit: cover;
+            margin-right: 20px;
+            border: 4px solid #ff0000;
+        }
+
+        .reloj-info {
+            width: calc(100% - 170px); /* Ajusta el ancho de la información para dejar espacio para la imagen */
+        }
+
+        .reloj-info h3 {
+            color: #b30000;
+        }
+
+        .reloj-btn {
+            background-color: #b30000;
+            color: white;
+            border: none;
+            padding: 10px 20px;
+            cursor: pointer;
+            font-size: 16px;
+        }
+
+        .reloj-btn:hover {
+            background-color: #ff4d4d;
+        }
+
+        .Carro {
+            width: 100%;
+            padding: 20px;
+            margin-top: 20px;
+            display: flex;
+            align-items: center;
+        }
+
+        .Carro-img {
+            width: 150px;
+            height: 150px;
+            object-fit: cover;
+            margin-right: 20px;
+            border: 4px solid #ff0000;
+        }
+
+        .Carro-info {
+            width: calc(100% - 170px); /* Ajusta el ancho de la información para dejar espacio para la imagen */
+        }
+
+        .Carro-info h3 {
+            color: #b30000;
+        }
+
+        .Carro-btn {
+            background-color: #b30000;
+            color: white;
+            border: none;
+            padding: 10px 20px;
+            cursor: pointer;
+            font-size: 16px;
+        }
+
+        .Carro-btn:hover {
+            background-color: #ff4d4d;
+        }
+
+        .section-container {
+            display: flex;
+            padding: 40px;
+            text-align: left;
+            justify-content: flex-start;
+        }
+
+        .section-container h2 {
+            color: #b30000;
+            width: 25%;
+            margin-right: 40px;
+        }
+
+        .section-container p {
+            width: 75%;
+        }
+
+        .cargador {
+            width: 100%;
+            padding: 20px;
+            margin-top: 20px;
+            display: flex;
+            align-items: center;
+        }
+
+        .cargador-img {
+            width: 150px;
+            height: 150px;
+            object-fit: cover;
+            margin-right: 20px;
+            border: 4px solid #ff0000;
+        }
+
+        .cargador-info {
+            width: calc(100% - 170px); /* Ajusta el ancho de la información para dejar espacio para la imagen */
+        }
+
+        .cargador-info h3 {
+            color: #b30000;
+        }
+
+        .cargador-btn {
+            background-color: #b30000;
+            color: white;
+            border: none;
+            padding: 10px 20px;
+            cursor: pointer;
+            font-size: 16px;
+        }
+
+        .cargador-btn:hover {
+            background-color: #ff4d4d;
+        }
+
+        .dron {
+            width: 100%;
+            padding: 20px;
+            margin-top: 20px;
+            display: flex;
+            align-items: center;
+        }
+
+        .dron-img {
+            width: 150px;
+            height: 150px;
+            object-fit: cover;
+            margin-right: 20px;
+            border: 4px solid #ff0000;
+        }
+
+        .dron-info {
+            width: calc(100% - 170px); /* Ajusta el ancho de la información para dejar espacio para la imagen */
+        }
+
+        .dron-info h3 {
+            color: #b30000;
+        }
+
+        .dron-btn {
+            background-color: #b30000;
+            color: white;
+            border: none;
+            padding: 10px 20px;
+            cursor: pointer;
+            font-size: 16px;
+        }
+
+        .dron-btn:hover {
+            background-color: #ff4d4d;
+        }
+
+        .audifono {
+            width: 100%;
+            padding: 20px;
+            margin-top: 20px;
+            display: flex;
+            align-items: center;
+        }
+
+        .audifono-img {
+            width: 150px;
+            height: 150px;
+            object-fit: cover;
+            margin-right: 20px;
+            border: 4px solid #ff0000;
+        }
+
+        .audifono-info {
+            width: calc(100% - 170px); /* Ajusta el ancho de la información para dejar espacio para la imagen */
+        }
+
+        .audifono-info h3 {
+            color: #b30000;
+        }
+
+        .audifono-btn {
+            background-color: #b30000;
+            color: white;
+            border: none;
+            padding: 10px 20px;
+            cursor: pointer;
+            font-size: 16px;
+        }
+
+        .audifono-btn:hover {
+            background-color: #ff4d4d;
+        }
+
+        .patineta {
+            width: 100%;
+            padding: 20px;
+            margin-top: 20px;
+            display: flex;
+            align-items: center;
+        }
+
+        .patineta-img {
+            width: 150px;
+            height: 150px;
+            object-fit: cover;
+            margin-right: 20px;
+            border: 4px solid #ff0000;
+        }
+
+        .patineta-info {
+            width: calc(100% - 170px); /* Ajusta el ancho de la información para dejar espacio para la imagen */
+        }
+
+        .patineta-info h3 {
+            color: #b30000;
+        }
+
+        .patineta-btn {
+            background-color: #b30000;
+            color: white;
+            border: none;
+            padding: 10px 20px;
+            cursor: pointer;
+            font-size: 16px;
+        }
+
+        .patineta-btn:hover {
+            background-color: #ff4d4d;
+        }
+
+        .play5 {
+            width: 100%;
+            padding: 20px;
+            margin-top: 20px;
+            display: flex;
+            align-items: center;
+        }
+
+        .play5-img {
+            width: 150px;
+            height: 150px;
+            object-fit: cover;
+            margin-right: 20px;
+            border: 4px solid #ff0000;
+        }
+
+        .play5-info {
+            width: calc(100% - 170px); /* Ajusta el ancho de la información para dejar espacio para la imagen */
+        }
+
+        .play5-info h3 {
+            color: #b30000;
+        }
+
+        .play5-btn {
+            background-color: #b30000;
+            color: white;
+            border: none;
+            padding: 10px 20px;
+            cursor: pointer;
+            font-size: 16px;
+        }
+
+        .play5-btn:hover {
+            background-color: #ff4d4d;
+        }
+
+        .Auriculares {
+            width: 100%;
+            padding: 20px;
+            margin-top: 20px;
+            display: flex;
+            align-items: center;
+        }
+
+        .Auriculares-img {
+            width: 150px;
+            height: 150px;
+            object-fit: cover;
+            margin-right: 20px;
+            border: 4px solid #ff0000;
+        }
+
+        .Auriculares-info {
+            width: calc(100% - 170px); /* Ajusta el ancho de la información para dejar espacio para la imagen */
+        }
+
+        .Auriculares-info h3 {
+            color: #b30000;
+        }
+
+        .Auriculares-btn {
+            background-color: #b30000;
+            color: white;
+            border: none;
+            padding: 10px 20px;
+            cursor: pointer;
+            font-size: 16px;
+        }
+
+        .Auriculares-btn:hover {
+            background-color: #ff4d4d;
+        }
+
+        .camara {
+            width: 100%;
+            padding: 20px;
+            margin-top: 20px;
+            display: flex;
+            align-items: center;
+        }
+
+        .camara-img {
+            width: 150px;
+            height: 150px;
+            object-fit: cover;
+            margin-right: 20px;
+            border: 4px solid #ff0000;
+        }
+
+        .camara-info {
+            width: calc(100% - 170px); /* Ajusta el ancho de la información para dejar espacio para la imagen */
+        }
+
+        .camara-info h3 {
+            color: #b30000;
+        }
+
+        .camara-btn {
+            background-color: #b30000;
+            color: white;
+            border: none;
+            padding: 10px 20px;
+            cursor: pointer;
+            font-size: 16px;
+        }
+
+        .camara-btn:hover {
+            background-color: #ff4d4d;
+        }
+
+        .teclado {
+            width: 100%;
+            padding: 20px;
+            margin-top: 20px;
+            display: flex;
+            align-items: center;
+        }
+
+        .teclado-img {
+            width: 150px;
+            height: 150px;
+            object-fit: cover;
+            margin-right: 20px;
+            border: 4px solid #ff0000;
+        }
+
+        .teclado-info {
+            width: calc(100% - 170px); /* Ajusta el ancho de la información para dejar espacio para la imagen */
+        }
+
+        .teclado-info h3 {
+            color: #b30000;
+        }
+
+        .teclado-btn {
+            background-color: #b30000;
+            color: white;
+            border: none;
+            padding: 10px 20px;
+            cursor: pointer;
+            font-size: 16px;
+        }
+
+        .teclado-btn:hover {
+            background-color: #ff4d4d;
+        }

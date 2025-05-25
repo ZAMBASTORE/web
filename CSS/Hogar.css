@@ -1,0 +1,448 @@
+        body {
+            margin: 0;
+            font-family: Arial, sans-serif;
+            background-color: #f8f8f8;
+        }
+
+        header {
+            background-color: #ff0000;
+            color: white;
+            padding: 1rem 2rem;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            position: sticky;
+            top: 0;
+            z-index: 1000;
+        }
+
+        header .logo {
+            font-size: 1.5rem;
+            font-weight: bold;
+        }
+
+        header nav a {
+            color: white;
+            text-decoration: none;
+            margin: 0 1rem;
+            font-weight: 600;
+        }
+        
+        header nav a:hover {
+            text-decoration: underline;
+        }
+
+        .section-container {
+            display: flex;
+            padding: 40px;
+            text-align: left;
+            justify-content: flex-start;
+        }
+
+        .section-container h2 {
+            color: #b30000;
+            width: 25%;
+            margin-right: 40px;
+        }
+
+        .section-container p {
+            width: 75%;
+        }
+
+        .Productos h2 {
+            text-align: center;
+            color: rgb(255, 0, 0);
+        }
+
+        .welcome {
+            width: 100%;
+            padding: 20px;
+            margin-top: 20px;
+            display: flex;
+            align-items: center;
+        }
+
+        .welcome-img {
+            width: 150px;
+            height: 150px;
+            object-fit: cover;
+            margin-right: 20px;
+            border: 4px solid #ff0000;
+        }
+
+        .welcome-info {
+            width: calc(100% - 170px); /* Ajusta el ancho de la información para dejar espacio para la imagen */
+        }
+
+        .welcome-info h3 {
+            color: #b30000;
+        }
+
+        .welcome-btn {
+            background-color: #b30000;
+            color: white;
+            border: none;
+            padding: 10px 20px;
+            cursor: pointer;
+            font-size: 16px;
+        }
+
+        .welcome-btn:hover {
+            background-color: #ff4d4d;
+        }
+
+        .estante {
+            width: 100%;
+            padding: 20px;
+            margin-top: 20px;
+            display: flex;
+            align-items: center;
+        }
+
+        .estante-img {
+            width: 150px;
+            height: 150px;
+            object-fit: cover;
+            margin-right: 20px;
+            border: 4px solid #ff0000;
+        }
+
+        .estante-info {
+            width: calc(100% - 170px); /* Ajusta el ancho de la información para dejar espacio para la imagen */
+        }
+
+        .estante-info h3 {
+            color: #b30000;
+        }
+
+        .estante-btn {
+            background-color: #b30000;
+            color: white;
+            border: none;
+            padding: 10px 20px;
+            cursor: pointer;
+            font-size: 16px;
+        }
+
+        .estante-btn:hover {
+            background-color: #ff4d4d;
+        }
+
+        .luz {
+            width: 100%;
+            padding: 20px;
+            margin-top: 20px;
+            display: flex;
+            align-items: center;
+        }
+
+        .luz-img {
+            width: 150px;
+            height: 150px;
+            object-fit: cover;
+            margin-right: 20px;
+            border: 4px solid #ff0000;
+        }
+
+        .luz-info {
+            width: calc(100% - 170px); /* Ajusta el ancho de la información para dejar espacio para la imagen */
+        }
+
+        .luz-info h3 {
+            color: #b30000;
+        }
+
+        .luz-btn {
+            background-color: #b30000;
+            color: white;
+            border: none;
+            padding: 10px 20px;
+            cursor: pointer;
+            font-size: 16px;
+        }
+
+        .luz-btn:hover {
+            background-color: #ff4d4d;
+        }
+
+        .alfombra {
+            width: 100%;
+            padding: 20px;
+            margin-top: 20px;
+            display: flex;
+            align-items: center;
+        }
+
+        .alfombra-img {
+            width: 150px;
+            height: 150px;
+            object-fit: cover;
+            margin-right: 20px;
+            border: 4px solid #ff0000;
+        }
+
+        .alfombra-info {
+            width: calc(100% - 170px); /* Ajusta el ancho de la información para dejar espacio para la imagen */
+        }
+
+        .alfombra-info h3 {
+            color: #b30000;
+        }
+
+        .alfombra-btn {
+            background-color: #b30000;
+            color: white;
+            border: none;
+            padding: 10px 20px;
+            cursor: pointer;
+            font-size: 16px;
+        }
+
+        .alfombra-btn:hover {
+            background-color: #ff4d4d;
+        }
+
+        .suape {
+            width: 100%;
+            padding: 20px;
+            margin-top: 20px;
+            display: flex;
+            align-items: center;
+        }
+
+        .suape-img {
+            width: 150px;
+            height: 150px;
+            object-fit: cover;
+            margin-right: 20px;
+            border: 4px solid #ff0000;
+        }
+
+        .suape-info {
+            width: calc(100% - 170px); /* Ajusta el ancho de la información para dejar espacio para la imagen */
+        }
+
+        .suape-info h3 {
+            color: #b30000;
+        }
+
+        .suape-btn {
+            background-color: #b30000;
+            color: white;
+            border: none;
+            padding: 10px 20px;
+            cursor: pointer;
+            font-size: 16px;
+        }
+
+        .suape-btn:hover {
+            background-color: #ff4d4d;
+        }
+
+        .soporte {
+            width: 100%;
+            padding: 20px;
+            margin-top: 20px;
+            display: flex;
+            align-items: center;
+        }
+
+        .soporte-img {
+            width: 150px;
+            height: 150px;
+            object-fit: cover;
+            margin-right: 20px;
+            border: 4px solid #ff0000;
+        }
+
+        .soporte-info {
+            width: calc(100% - 170px); /* Ajusta el ancho de la información para dejar espacio para la imagen */
+        }
+
+        .soporte-info h3 {
+            color: #b30000;
+        }
+
+        .soporte-btn {
+            background-color: #b30000;
+            color: white;
+            border: none;
+            padding: 10px 20px;
+            cursor: pointer;
+            font-size: 16px;
+        }
+
+        .soporte-btn:hover {
+            background-color: #ff4d4d;
+        }
+
+        .ducha {
+            width: 100%;
+            padding: 20px;
+            margin-top: 20px;
+            display: flex;
+            align-items: center;
+        }
+
+        .ducha-img {
+            width: 150px;
+            height: 150px;
+            object-fit: cover;
+            margin-right: 20px;
+            border: 4px solid #ff0000;
+        }
+
+        .ducha-info {
+            width: calc(100% - 170px); /* Ajusta el ancho de la información para dejar espacio para la imagen */
+        }
+
+        .ducha-info h3 {
+            color: #b30000;
+        }
+
+        .ducha-btn {
+            background-color: #b30000;
+            color: white;
+            border: none;
+            padding: 10px 20px;
+            cursor: pointer;
+            font-size: 16px;
+        }
+
+        .ducha-btn:hover {
+            background-color: #ff4d4d;
+        }
+
+        .cortina {
+            width: 100%;
+            padding: 20px;
+            margin-top: 20px;
+            display: flex;
+            align-items: center;
+        }
+
+        .cortina-img {
+            width: 150px;
+            height: 150px;
+            object-fit: cover;
+            margin-right: 20px;
+            border: 4px solid #ff0000;
+        }
+
+        .cortina-info {
+            width: calc(100% - 170px); /* Ajusta el ancho de la información para dejar espacio para la imagen */
+        }
+
+        .cortina-info h3 {
+            color: #b30000;
+        }
+
+        .cortina-btn {
+            background-color: #b30000;
+            color: white;
+            border: none;
+            padding: 10px 20px;
+            cursor: pointer;
+            font-size: 16px;
+        }
+
+        .cortina-btn:hover {
+            background-color: #ff4d4d;
+        }
+
+        .trate {
+            width: 100%;
+            padding: 20px;
+            margin-top: 20px;
+            display: flex;
+            align-items: center;
+        }
+
+        .trate-img {
+            width: 150px;
+            height: 150px;
+            object-fit: cover;
+            margin-right: 20px;
+            border: 4px solid #ff0000;
+        }
+
+        .trate-info {
+            width: calc(100% - 170px); /* Ajusta el ancho de la información para dejar espacio para la imagen */
+        }
+
+        .trate-info h3 {
+            color: #b30000;
+        }
+
+        .trate-btn {
+            background-color: #b30000;
+            color: white;
+            border: none;
+            padding: 10px 20px;
+            cursor: pointer;
+            font-size: 16px;
+        }
+
+        .trate-btn:hover {
+            background-color: #ff4d4d;
+        }
+
+        .mesita {
+            width: 100%;
+            padding: 20px;
+            margin-top: 20px;
+            display: flex;
+            align-items: center;
+        }
+
+        .mesita-img {
+            width: 150px;
+            height: 150px;
+            object-fit: cover;
+            margin-right: 20px;
+            border: 4px solid #ff0000;
+        }
+
+        .mesita-info {
+            width: calc(100% - 170px); /* Ajusta el ancho de la información para dejar espacio para la imagen */
+        }
+
+        .mesita-info h3 {
+            color: #b30000;
+        }
+
+        .mesita-btn {
+            background-color: #b30000;
+            color: white;
+            border: none;
+            padding: 10px 20px;
+            cursor: pointer;
+            font-size: 16px;
+        }
+
+        .mesita-btn:hover {
+            background-color: #ff4d4d;
+        }
+
+        .center-line {
+            position: relative;
+            display: inline-block;
+            color: rgba(0, 0, 0, 0.7); /* Color negro con transparencia */
+            left: 20px;
+        }
+        .center-line::before {
+            content: "";
+            position: absolute;
+            top: 50%;
+            left: 0;
+            width: 100%;
+            height: 1px; /* Grosor de la línea */
+            background-color: black; /* Color de la línea */
+            transform: translateY(-50%);
+        }
+
+        .descuento {
+            color: #b30000;
+            border: 2px solid #ff0000;
+            display: inline;
+        }

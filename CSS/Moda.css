@@ -1,0 +1,447 @@
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: rgb(255, 255, 255);
+            color: #333;
+        }
+
+        header {
+            background-color: #ff0000;
+            color: white;
+            padding: 1rem 2rem;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            position: sticky;
+            top: 0;
+            z-index: 1000;
+        }
+        header .logo {
+            font-size: 1.5rem;
+            font-weight: bold;
+        }
+        header nav a {
+            color: white;
+            text-decoration: none;
+            margin: 0 1rem;
+            font-weight: 600;
+        }
+        header nav a:hover {
+            text-decoration: underline;
+        }
+
+        .section-container {
+            display: flex;
+            padding: 40px;
+            text-align: left;
+            justify-content: flex-start;
+        }
+
+        .section-container h2 {
+            color: #b30000;
+            width: 25%;
+            margin-right: 40px;
+        }
+
+        .section-container p {
+            width: 75%;
+        }
+
+        .Productos h2 {
+            text-align: center;
+            color: rgb(255, 0, 0);
+        }
+
+        .manga {
+            width: 100%;
+            padding: 20px;
+            margin-top: 20px;
+            display: flex;
+            align-items: center;
+        }
+
+        .manga-img {
+            width: 150px;
+            height: 150px;
+            object-fit: cover;
+            margin-right: 20px;
+            border: 4px solid #ff0000;
+        }
+
+        .manga-info {
+            width: calc(100% - 170px); /* Ajusta el ancho de la información para dejar espacio para la imagen */
+        }
+
+        .manga-info h3 {
+            color: #b30000;
+        }
+
+        .manga-btn {
+            background-color: #b30000;
+            color: white;
+            border: none;
+            padding: 10px 20px;
+            cursor: pointer;
+            font-size: 16px;
+        }
+
+        .manga-btn:hover {
+            background-color: #ff4d4d;
+        }
+
+        .camiseta {
+            width: 100%;
+            padding: 20px;
+            margin-top: 20px;
+            display: flex;
+            align-items: center;
+        }
+
+        .camiseta-img {
+            width: 150px;
+            height: 150px;
+            object-fit: cover;
+            margin-right: 20px;
+            border: 4px solid #ff0000;
+        }
+
+        .camiseta-info {
+            width: calc(100% - 170px); /* Ajusta el ancho de la información para dejar espacio para la imagen */
+        }
+
+        .camiseta-info h3 {
+            color: #b30000;
+        }
+
+        .camiseta-btn {
+            background-color: #b30000;
+            color: white;
+            border: none;
+            padding: 10px 20px;
+            cursor: pointer;
+            font-size: 16px;
+        }
+
+        .camiseta-btn:hover {
+            background-color: #ff4d4d;
+        }
+
+        .vestido {
+            width: 100%;
+            padding: 20px;
+            margin-top: 20px;
+            display: flex;
+            align-items: center;
+        }
+
+        .vestido-img {
+            width: 150px;
+            height: 150px;
+            object-fit: cover;
+            margin-right: 20px;
+            border: 4px solid #ff0000;
+        }
+
+        .vestido-info {
+            width: calc(100% - 170px); /* Ajusta el ancho de la información para dejar espacio para la imagen */
+        }
+
+        .vestido-info h3 {
+            color: #b30000;
+        }
+
+        .vestido-btn {
+            background-color: #b30000;
+            color: white;
+            border: none;
+            padding: 10px 20px;
+            cursor: pointer;
+            font-size: 16px;
+        }
+
+        .vestido-btn:hover {
+            background-color: #ff4d4d;
+        }
+
+        .Jeans {
+            width: 100%;
+            padding: 20px;
+            margin-top: 20px;
+            display: flex;
+            align-items: center;
+        }
+
+        .Jeans-img {
+            width: 150px;
+            height: 150px;
+            object-fit: cover;
+            margin-right: 20px;
+            border: 4px solid #ff0000;
+        }
+
+        .Jeans-info {
+            width: calc(100% - 170px); /* Ajusta el ancho de la información para dejar espacio para la imagen */
+        }
+
+        .Jeans-info h3 {
+            color: #b30000;
+        }
+
+        .Jeans-btn {
+            background-color: #b30000;
+            color: white;
+            border: none;
+            padding: 10px 20px;
+            cursor: pointer;
+            font-size: 16px;
+        }
+
+        .Jeans-btn:hover {
+            background-color: #ff4d4d;
+        }
+
+        .Camiseta {
+            width: 100%;
+            padding: 20px;
+            margin-top: 20px;
+            display: flex;
+            align-items: center;
+        }
+
+        .Camiseta-img {
+            width: 150px;
+            height: 150px;
+            object-fit: cover;
+            margin-right: 20px;
+            border: 4px solid #ff0000;
+        }
+
+        .Camiseta-info {
+            width: calc(100% - 170px); /* Ajusta el ancho de la información para dejar espacio para la imagen */
+        }
+
+        .Camiseta-info h3 {
+            color: #b30000;
+        }
+
+        .Camiseta-btn {
+            background-color: #b30000;
+            color: white;
+            border: none;
+            padding: 10px 20px;
+            cursor: pointer;
+            font-size: 16px;
+        }
+
+        .Camiseta-btn:hover {
+            background-color: #ff4d4d;
+        }
+
+        .Conjunto {
+            width: 100%;
+            padding: 20px;
+            margin-top: 20px;
+            display: flex;
+            align-items: center;
+        }
+
+        .Conjunto-img {
+            width: 150px;
+            height: 150px;
+            object-fit: cover;
+            margin-right: 20px;
+            border: 4px solid #ff0000;
+        }
+
+        .Conjunto-info {
+            width: calc(100% - 170px); /* Ajusta el ancho de la información para dejar espacio para la imagen */
+        }
+
+        .Conjunto-info h3 {
+            color: #b30000;
+        }
+
+        .Conjunto-btn {
+            background-color: #b30000;
+            color: white;
+            border: none;
+            padding: 10px 20px;
+            cursor: pointer;
+            font-size: 16px;
+        }
+
+        .Conjunto-btn:hover {
+            background-color: #ff4d4d;
+        }
+
+        .Sudadera {
+            width: 100%;
+            padding: 20px;
+            margin-top: 20px;
+            display: flex;
+            align-items: center;
+        }
+
+        .Sudadera-img {
+            width: 150px;
+            height: 150px;
+            object-fit: cover;
+            margin-right: 20px;
+            border: 4px solid #ff0000;
+        }
+
+        .Sudadera-info {
+            width: calc(100% - 170px); /* Ajusta el ancho de la información para dejar espacio para la imagen */
+        }
+
+        .Sudadera-info h3 {
+            color: #b30000;
+        }
+
+        .Sudadera-btn {
+            background-color: #b30000;
+            color: white;
+            border: none;
+            padding: 10px 20px;
+            cursor: pointer;
+            font-size: 16px;
+        }
+
+        .Sudadera-btn:hover {
+            background-color: #ff4d4d;
+        }
+
+        .pijama {
+            width: 100%;
+            padding: 20px;
+            margin-top: 20px;
+            display: flex;
+            align-items: center;
+        }
+
+        .pijama-img {
+            width: 150px;
+            height: 150px;
+            object-fit: cover;
+            margin-right: 20px;
+            border: 4px solid #ff0000;
+        }
+
+        .pijama-info {
+            width: calc(100% - 170px); /* Ajusta el ancho de la información para dejar espacio para la imagen */
+        }
+
+        .pijama-info h3 {
+            color: #b30000;
+        }
+
+        .pijama-btn {
+            background-color: #b30000;
+            color: white;
+            border: none;
+            padding: 10px 20px;
+            cursor: pointer;
+            font-size: 16px;
+        }
+
+        .pijama-btn:hover {
+            background-color: #ff4d4d;
+        }
+
+        .panti {
+            width: 100%;
+            padding: 20px;
+            margin-top: 20px;
+            display: flex;
+            align-items: center;
+        }
+
+        .panti-img {
+            width: 150px;
+            height: 150px;
+            object-fit: cover;
+            margin-right: 20px;
+            border: 4px solid #ff0000;
+        }
+
+        .panti-info {
+            width: calc(100% - 170px); /* Ajusta el ancho de la información para dejar espacio para la imagen */
+        }
+
+        .panti-info h3 {
+            color: #b30000;
+        }
+
+        .panti-btn {
+            background-color: #b30000;
+            color: white;
+            border: none;
+            padding: 10px 20px;
+            cursor: pointer;
+            font-size: 16px;
+        }
+
+        .panti-btn:hover {
+            background-color: #ff4d4d;
+        }
+
+        .Sujetadores {
+            width: 100%;
+            padding: 20px;
+            margin-top: 20px;
+            display: flex;
+            align-items: center;
+        }
+
+        .Sujetadores-img {
+            width: 150px;
+            height: 150px;
+            object-fit: cover;
+            margin-right: 20px;
+            border: 4px solid #ff0000;
+        }
+
+        .Sujetadores-info {
+            width: calc(100% - 170px); /* Ajusta el ancho de la información para dejar espacio para la imagen */
+        }
+
+        .Sujetadores-info h3 {
+            color: #b30000;
+        }
+
+        .Sujetadores-btn {
+            background-color: #b30000;
+            color: white;
+            border: none;
+            padding: 10px 20px;
+            cursor: pointer;
+            font-size: 16px;
+        }
+
+        .Sujetadores-btn:hover {
+            background-color: #ff4d4d;
+        }
+
+        .center-line {
+            position: relative;
+            display: inline-block;
+            color: rgba(0, 0, 0, 0.7); /* Color negro con transparencia */
+            left: 20px;
+        }
+        .center-line::before {
+            content: "";
+            position: absolute;
+            top: 50%;
+            left: 0;
+            width: 100%;
+            height: 1px; /* Grosor de la línea */
+            background-color: black; /* Color de la línea */
+            transform: translateY(-50%);
+        }
+
+        .descuento {
+            color: #b30000;
+            border: 2px solid #ff0000;
+            display: inline;
+        }
